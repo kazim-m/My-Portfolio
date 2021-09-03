@@ -31,7 +31,7 @@
 .navbar a:hover{
     background-color: #00ADB5;
     color: #222831
-    box-shadow: 0 0 10px #00ADB5      
+    box-shadow; 0 0 10px #00ADB5    
 }
 .active {
   background-color: #00ADB5;
@@ -54,10 +54,11 @@
     line-height: 0px;
     background-color:#EEEEEE;
     border: 1px solid #393E46;  
+    text-decoration: none;
 }
 .sidebar a:hover{
     background-color:#00ADB5;
-    transition: all ease 0.5s;
+    transition: all ease 0.5s;  
 }
 .sidebar i{
     color: #222831;
@@ -67,7 +68,6 @@
     color:#EEEEEE;
     transition: all ease 0.5s;
 }
-
 /*Page Headings/titles */
 .headings {
     display: flex;
@@ -86,15 +86,16 @@
     justify-content: center;
     font-family:'Roboto Condensed', sans-serif;
     font-size:2em;
-    margin-top:50px;
-    margin-bottom:50px;
+    margin-top:40px;
+    margin-bottom:40px;
     color: #EEEEEE;
     text-decoration: underline 10px #00ADB5;
 }
-.center {
+.centerhome {
   display: block;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 10px;
   width: 300px;
   border: 20px solid #222831;
 }
@@ -102,7 +103,7 @@
     font-family:'Roboto Condensed', sans-serif;
     text-align: center;
     color:#EEEEEE;
-     margin-top: 30px;
+     margin-top: 25px;
      text-decoration: underline 10px #222831;
 }
 footer{
@@ -110,4 +111,90 @@ footer{
     background-color:#EEEEEE;
     color:#222831;
 }
+/*About me*/
+.aboutme{
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+    width:200px;
+    background-color:#00ADB5;
+    color:#EEEEEE;
+    font-family:'Roboto Condensed', sans-serif;
+    font-size:1rem;
+    padding:20px 0px;
+}
+#container1{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    min-height: 80vh;
+}
+/* Left Side */
+.left{
+    display: flex;
+    width: 33%;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    box-sizing: border-box;
 
+}
+.left img{
+    margin:10px;
+}
+.s-engineer{
+    position:relative;
+    right: 350px;
+    bottom: 170px;
+    color: #EEEEEE;
+    font-family: 'Roboto Mono', monospace;
+}
+.pc-enth{
+    display:inline;
+    position:relative;
+    left: 50px;
+    top:240px;
+    color: #EEEEEE;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 0.5 rem;
+}
+/* Center */
+.center{
+    display: flex;
+    width: 33%;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    box-sizing: border-box;
+}
+    
+.center img{
+    margin:10px;
+}
+/* Right Side */
+.right{
+    display: flex;
+    width: 33%;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    box-sizing: border-box;
+}
+.right img{
+    margin: 10px;
+}
+/* Style buttons */
+.btn {
+    background-color: #EEEEEE;
+    border: none;
+    color:#393E46;
+    padding: 15px 30px;
+    cursor: pointer;
+    font-size: 20px;
+    margin-top: 60%;
+    margin-bottom:30%;
+  }
+  
+  /* Darker background on mouse-over */
+  .btn:hover {
+    background-color: #00ADB5;
+    color:#EEEEEE;
+    transition: 0.5s;
+  }
