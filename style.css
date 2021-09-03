@@ -1,0 +1,113 @@
+/* Background color*/
+:root {
+  background: #393E46;
+}
+/* Navbar */
+.navbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #222831;
+    position: sticky;
+    top: 0;
+
+}
+.navbar {
+    display: flex;
+    list-style: none;
+    margin: 20px 0px; 
+}
+.navbar a{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+.navbar a{
+    text-decoration: none;
+    color: #EEEEEE;
+    padding: 8px 25px;
+    transition: all .5s ease;
+}
+.navbar a:hover{
+    background-color: #00ADB5;
+    color: #222831
+    box-shadow: 0 0 10px #00ADB5      
+}
+.active {
+  background-color: #00ADB5;
+}
+/*Social Media Bar*/ 
+.sidebar{
+   position:fixed;
+   top:50%;
+   right:0px; 
+   transform: translateX(-50%);
+}
+.sidebar a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:55px;
+    height:55px;
+    padding: 0px;
+    margin: 0px;
+    line-height: 0px;
+    background-color:#EEEEEE;
+    border: 1px solid #393E46;  
+}
+.sidebar a:hover{
+    background-color:#00ADB5;
+    transition: all ease 0.5s;
+}
+.sidebar i{
+    color: #222831;
+    font-size: 30px;
+}
+.sidebar i:hover{
+    color:#EEEEEE;
+    transition: all ease 0.5s;
+}
+
+/*Page Headings/titles */
+.headings {
+    display: flex;
+    justify-content: center;
+    width: 600px;
+    margin: auto;
+    background-color:#00ADB5;
+    color:#EEEEEE;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 2.5em;
+    padding: 35px 0px;   
+}
+/*Home Page*/
+.subheadings {
+    display: flex;
+    justify-content: center;
+    font-family:'Roboto Condensed', sans-serif;
+    font-size:2em;
+    margin-top:50px;
+    margin-bottom:50px;
+    color: #EEEEEE;
+    text-decoration: underline 10px #00ADB5;
+}
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 300px;
+  border: 20px solid #222831;
+}
+.home{
+    font-family:'Roboto Condensed', sans-serif;
+    text-align: center;
+    color:#EEEEEE;
+     margin-top: 30px;
+     text-decoration: underline 10px #222831;
+}
+footer{
+    display:flex;
+    background-color:#EEEEEE;
+    color:#222831;
+}
+
