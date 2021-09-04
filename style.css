@@ -41,7 +41,6 @@
    position:fixed;
    top:50%;
    right:0px; 
-   transform: translateX(-50%);
 }
 .sidebar a{
     display: flex;
@@ -56,13 +55,14 @@
     border: 1px solid #393E46;  
     text-decoration: none;
 }
-.sidebar a:hover{
-    background-color:#00ADB5;
-    transition: all ease 0.5s;  
-}
 .sidebar i{
     color: #222831;
     font-size: 30px;
+}
+/* Social media animation on mouse-over */
+.sidebar a:hover{
+    background-color:#00ADB5;
+    transition: all ease 0.5s;  
 }
 .sidebar i:hover{
     color:#EEEEEE;
@@ -80,7 +80,6 @@
     font-size: 2.5em;
     padding: 35px 0px;   
 }
-/*Home Page*/
 .subheadings {
     display: flex;
     justify-content: center;
@@ -91,27 +90,6 @@
     color: #EEEEEE;
     text-decoration: underline 10px #00ADB5;
 }
-.centerhome {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 10px;
-  width: 300px;
-  border: 20px solid #222831;
-}
-.home{
-    font-family:'Roboto Condensed', sans-serif;
-    text-align: center;
-    color:#EEEEEE;
-     margin-top: 25px;
-     text-decoration: underline 10px #222831;
-}
-footer{
-    display:flex;
-    background-color:#EEEEEE;
-    color:#222831;
-}
-/*About me*/
 .aboutme{
     display:flex;
     flex-direction:row;
@@ -123,62 +101,87 @@ footer{
     font-size:1rem;
     padding:20px 0px;
 }
-#container1{
-    display: flex;
-    align-items: center;
-    flex-direction: row;
-    min-height: 80vh;
+/*Home Page*/
+.centerhome {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+  width: 300px;
+  border: 20px solid #222831;
 }
-/* Left Side */
-.left{
-    display: flex;
-    width: 33%;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    box-sizing: border-box;
+.home{
+    font-family: 'Roboto Condensed', sans-serif;
+    text-align: center;
+    color:#EEEEEE;
+     margin-top: 25px;
+     text-decoration: underline 10px #222831;
+     font-size: ;
+}
 
+footer{
+    display:flex;
+    background-color:#EEEEEE;
+    color:#222831;
 }
-.left img{
-    margin:10px;
-}
-.s-engineer{
-    position:relative;
-    right: 350px;
-    bottom: 170px;
+/*About me*/
+.flex-grid {
+    display: flex;
+  }
+  .flex-grid .col {
+    flex: 1;
+  }
+  .flex-grid-thirds {
+    display: flex;
+    justify-content: space-between;
+  }
+  .flex-grid-thirds .col {
+    width: 32%;
+  }
+.topleft{
+    display: flex;
+    flex-direction: column;
+    margin-top: 150px;
     color: #EEEEEE;
     font-family: 'Roboto Mono', monospace;
 }
-.pc-enth{
-    display:inline;
-    position:relative;
-    left: 50px;
-    top:240px;
+.bottomleft{
     color: #EEEEEE;
     font-family: 'Roboto Mono', monospace;
-    font-size: 0.5 rem;
-}
-/* Center */
-.center{
+    font-size: 16px;
     display: flex;
-    width: 33%;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    box-sizing: border-box;
+    flex-direction: column;
+    width: 150px;
+    margin-top: 180px;
+    margin-left: 20px;  
 }
-    
-.center img{
-    margin:10px;
-}
-/* Right Side */
-.right{
+.topcenter{
     display: flex;
-    width: 33%;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    box-sizing: border-box;
+    flex-direction: column;
+    margin-top: 120px;
+    color: #EEEEEE;
+    font-family: 'Roboto Mono', monospace;
+    width: 150px;
+    margin-left: 20px;
 }
-.right img{
-    margin: 10px;
+.bottomcenter{
+    color: #EEEEEE;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    width: 150px;
+    margin-top: 150px;
+    margin-left: 20px;    
+}
+.topright{
+    display: flex;
+    flex-direction: column;
+    margin-top: 120px;
+    margin-left: 20px;
+    width: 150px;
+    color: #EEEEEE;
+    font-family: 'Roboto Mono', monospace;
 }
 /* Style buttons */
 .btn {
@@ -188,8 +191,9 @@ footer{
     padding: 15px 30px;
     cursor: pointer;
     font-size: 20px;
-    margin-top: 60%;
-    margin-bottom:30%;
+    position: absolute;
+    right: 250px;
+    bottom: 150px;
   }
   
   /* Darker background on mouse-over */
