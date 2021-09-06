@@ -2,11 +2,21 @@
 :root {
   background: #393E46;
 }
+/* Footer*/
+footer{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    padding:2px;
+    background-color: #222831;
+    color:#393E46;
+}
 /* Navbar */
 .navbar{
     display: flex;
     justify-content: center;
-    align-items: center;
     background-color: #222831;
     position: sticky;
     top: 0;
@@ -15,7 +25,7 @@
 .navbar {
     display: flex;
     list-style: none;
-    margin: 20px 0px; 
+    margin: 15px 0px; 
 }
 .navbar a{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -51,12 +61,12 @@
     padding: 0px;
     margin: 0px;
     line-height: 0px;
-    background-color:#EEEEEE;
-    border: 1px solid #393E46;  
+    background-color: #222831;
+    border: 2px solid #393E46;  
     text-decoration: none;
 }
 .sidebar i{
-    color: #222831;
+    color: #EEEEEE;
     font-size: 30px;
 }
 /* Social media animation on mouse-over */
@@ -108,21 +118,14 @@
   margin-right: auto;
   margin-top: 10px;
   width: 300px;
-  border: 20px solid #222831;
+  border-radius: 20px;
 }
 .home{
     font-family: 'Roboto Condensed', sans-serif;
     text-align: center;
     color:#EEEEEE;
      margin-top: 25px;
-     text-decoration: underline 10px #222831;
-     font-size: ;
-}
-
-footer{
-    display:flex;
-    background-color:#EEEEEE;
-    color:#222831;
+     text-decoration: underline 7px #222831;
 }
 /*About me*/
 .flex-grid {
@@ -185,10 +188,10 @@ footer{
 }
 /* Style buttons */
 .btn {
-    background-color: #EEEEEE;
+    background-color: #222831;
     border: none;
-    color:#393E46;
-    padding: 15px 30px;
+    color:#EEEEEE;
+    padding: 30px 30px;
     cursor: pointer;
     font-size: 20px;
     position: absolute;
@@ -202,3 +205,81 @@ footer{
     color:#EEEEEE;
     transition: 0.5s;
   }
+  /*Blogs List Page*/
+  .row{
+      display: flex;
+  }
+  .box{
+      display: flex;
+      flex-direction: column;
+      width: 220px;
+      height: 400px;
+      border: 1px solid #222831;
+      color: #222831;
+      font-family: 'Roboto Mono', monospace;
+      margin: 10px;
+      align-items:center;
+      text-align: justify;
+      padding:10px;
+      border-radius: 15px;
+      background: linear-gradient(to top, #00adb5 50%, #EEEEEE 50%);
+      background-size: 100% 200%;
+      transition: all .6s;
+      margin-top: 80px;
+      margin-left:20px;
+      text-decoration: none;
+  }
+  .box:hover{
+      background-position: left bottom;
+      color: #EEEEEE;
+      border: none;
+  }
+  /* Individual Blog Pages */
+.blog{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    margin-top: 30px;
+    font-family: 'Roboto Mono', monospace;
+    color:#EEEEEE;
+    border-radius: 10px;
+}
+/*Contact Me Page */
+#contact{
+    display: flex;
+    flex-direction: column;
+    box-sizing:border-box;
+    padding:20px;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    align-items: center;
+    margin: 20px 0px;
+}
+.input{
+    padding:12px;
+    margin:15px;
+    width: 30%;
+}
+#msg{
+    width: 30%;
+    padding: 10px;
+    margin: 15px;
+}
+#send{
+    padding: 10px;
+    width:10%;
+    border: none;
+    outline: none;
+    background-color: #222831;
+    color: #EEEEEE;
+}
+#send:hover{
+    cursor:pointer;
+    background-color: #00ADB5;
+    color: #EEEEEE;
+}
+    
