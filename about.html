@@ -1,76 +1,83 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta charset=utf-8>
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
         <link rel="stylesheet" href="style.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
         <title>About</title>
-        <!--Top Nav Bar-->
+        <!--Top Navbar -->
         <nav class="navbar">
             <a class="Home" href="#home">Home</a>
             <a class="active" href="#about">About Me</a>
             <a class= "blogs" href="#blogs">Blogs</a>
             <a class= "contact" href="#contact">Contact</a>
-        </nav>
-    </head>
-    <body>
-        <!--Social Media Side Bar-->
+        </nav> 
+        <!-- Social Media SideBar-->
     <nav class="sidebar">
         <a href="#"><i class="fa fa-linkedin"></i></a>
         <a href="#"><i class="fa fa-github"></i></a>
         <a href="#"><i class="fa fa-facebook"></i></a>
         </nav>    
-        <!-- Left Side Images -->
-<div class="flex-grid">
-    <div class="col">
-        <h3 class="aboutme">Software Engineer</h3>
-        <img src="code.jpg" alt="code">
+    </head>
+    <body>
+        <!-- SE Block -->
+        <div class="wrapper">
+        <div>
+     <h3 class="aboutme">Software Engineer</h3>
+        <section class="row">
+        <img src="code.jpg" alt="code" class="img">
+            <ul>
+            <li>Diploma of IT</li>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>Java</li>
+            <li>Ruby</li>
+            <li>Ruby on Rails</li>
+            </ul>
+        </section>
+   <!-- PCE Block -->
         <h3 class="aboutme">Computer Enthusiast</h3>
-        <img src="pc.jpg" alt="pc">
+        <section class="row">
+        <img src="pc.jpg" alt="pc"class="img">
+        <p>Skilled in the research, installation and assembling of computer 
+            hardare for client's individual needs, as well as software management.
+         </p>
+        </section>
     </div>
-     <!-- Left Side Text -->
-    <div class="col">
-    <ul class="topleft">
-    <li>Diploma of IT</li>
-    <li>HTML</li>
-    <li>CSS</li>
-    <li>Java</li>
-    <li>Ruby</li>
-    <li>Ruby on Rails</li>
-    </ul>
-    <p class="bottomleft">Skilled in the research, installation and assembling of computer 
-        hardare for client's individual needs, as well as software management 
-        and troubleshooting. </p>
-  </div>
-   <!-- Center Images -->
-    <div class="col">
-        <h3 class="aboutme">Ex-Professional Barber</h3>
-     <img src="barber.jpg" alt="barber products">
+   <!-- PB Block -->
+   <div>
+        <h3 class="aboutme">Professional Barber</h3>
+        <section class="row">
+     <img src="barber.jpg" alt="barber products" class="img">
+     <p>5 years experience, developed a precise eye for detail 
+        as well as outstanding communication and 
+        emotional intelligence skills.</p>
+    </section>
+<!--V Block-->
         <h3 class="aboutme">Volunteer</h3>
-        <img src="volunteer.jpg" alt="class">
-    </div>
-   <!-- Center Text -->
-    <div class="col">
-        <p class="topcenter">5 years experience, developed a precise eye for detail 
-            as well as outstanding communication and 
-            emotional intelligence skills.</p>
-            <p class="bottomcenter">Events, programs and extracurricular activities 
-                organiser as well as teacher at Ahlu Bayt Islamic Centre (ABIC)</p>
-    </div>
-     <!-- Right Side Images -->
-    <div class="col">
+        <section class="row">
+        <img src="volunteer.jpg" alt="classroom" class="img">
+        <p>Events, programs and extracurricular activities 
+            organiser as well as teacher at Ahlu Bayt Islamic Centre (ABIC)</p>
+        </section>
+        </div>
+     <!-- MS Block -->
+     <div>
       <h3 class="aboutme">Marketing Student</h3>
-      <img src="marketing.jpg" alt="marketing">
-  </div>
-   <!-- Right Side Text -->
-    <div class="col">
-        <p class="topright"> University of Technology Sydney, 
+      <section class="row">
+      <img src="marketing.jpg" alt="marketing"class="img">
+        <p> University of Technology Sydney, 
             student in marketing strategies and consumer behaviour. 
             Confident in working in corporation.</p>
-    </div>
+        </section>
   </div>
+</div>
+  <div class="bcenter">
   <button class="btn"><i class="fa fa-download"></i>View Resume</button>
+</div>
   <footer class="footer">Copyright &copy 2021 Mujtaba Kazim</footer>
-    </body>
-    <footer>Copyright &copy 2021 Mujtaba Kazim</footer>
+  <footer>Copyright &copy 2021 Mujtaba Kazim</footer>
+</body>
 </html>
