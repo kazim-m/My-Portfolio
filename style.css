@@ -1,4 +1,5 @@
-body{margin:0;}
+body{margin:0;
+padding:0;}
 /* Background color*/
 :root {
   background: #393E46;
@@ -21,6 +22,8 @@ footer{
     background-color: #222831;
     position: sticky;
     top: 0;
+    padding:0;
+    margin:0;
 
 }
 .navbar {
@@ -130,6 +133,8 @@ footer{
   .row {
       color:#EEEEEE;
       font-family:'Roboto Mono', monospace;
+      display:flex;
+      flex-direction:row;
   }
   .row p{
       margin-left:10px;
@@ -159,14 +164,17 @@ footer{
     transition: 0.5s;
   }
   /*Blogs List Page*/
-  .row{
+  .rowb{
       display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items:center;
   }
   .box{
       display: flex;
       flex-direction: column;
-      width: 220px;
-      height: 400px;
+      width: 500px;
+      height: 500px;
       border: 1px solid #222831;
       color: #222831;
       font-family: 'Roboto Mono', monospace;
@@ -180,6 +188,7 @@ footer{
       transition: all .6s;
       margin-top: 80px;
       margin-left:20px;
+      margin-bottom:30px;
       text-decoration: none;
   }
   .box:hover{
@@ -196,6 +205,15 @@ footer{
     margin-top: 30px;
     font-family: 'Roboto Mono', monospace;
     color:#EEEEEE;
+}
+.iblog{
+    margin-bottom:40px;
+}
+.blog-img{
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top:30px;
     border-radius: 10px;
 }
 /*Contact Me Page */
@@ -234,30 +252,316 @@ footer{
     cursor:pointer;
     background-color: #00ADB5;
     color: #EEEEEE;
-}   
-/*Responsive Design*/
-@media only screen and (min-width:600px) and (max-width:800px){
-    .centerhome {width:60%}
-    .wrapper {
-        display: grid;
-        grid-template-columns: 350px 350px;
-      }
-      .row img{width:200px;}
-      .btn{ position: absolute;right: 120px;bottom: 70px;}
-    }
-@media only screen and (min-width:320px) and (max-width:480px){
-    .hcenter{width:100vh;font-size:2rem;} 
-    .sidebar{display:none;} 
-    .btn{margin-top:20px;}
+} 
+.phonesocial{
+    display:flex;
+    position:fixed;
+    margin-left:250px;
+    flex-direction:row;
+     }
+     .phonesocial a{
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         width:100px;
+         height:100px;
+         padding: 0px;
+         margin: 0px;
+         line-height: 0px;
+         background-color: #222831;
+         border: 2px solid #393E46;  
+         text-decoration: none;
+}
+.phonesocial i{
+    color: #EEEEEE;
+    font-size: 3rem;
+}
+/* Phone Social media animation on mouse-over */
+.phonesocial a:hover{
+    background-color:#00ADB5;
+    transition: all ease 0.5s;  
+}
+.phonesocial i:hover{
+    color:#EEEEEE;
+    transition: all ease 0.5s;
+}
+  /*Phone Header*/
+  #menuToggle
+{
+  display: block;
+  position: relative;
+  top: 50px;
+  left: 50px;
+  
+  z-index: 1;
+  
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+#menuToggle a
+{
+  text-decoration: none;
+  color: #232323;
+  
+  transition: color 0.3s ease;
+}
+
+#menuToggle a:hover
+{
+color: #00ADB5;
 
 }
+
+
+#menuToggle input
+{
+  display: block;
+  width: 30px;
+  height: 32px;
+  position: absolute;
+  top: -7px;
+  left: -5px;
+  
+  cursor: pointer;
+  
+  opacity: 0; 
+  z-index: 2; 
+  
+  -webkit-touch-callout: none;
+}
+#menuToggle span
+{
+  display: block;
+  width: 33px;
+  height: 4px;
+  margin-bottom: 5px;
+  position: relative;
+  
+  background-color:#EEEEEE;
+  border-radius: 3px;
+  
+  z-index: 1;
+  
+  transform-origin: 4px 0px;
+  
+  transition: 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              0.55s ease;
+}
+
+#menuToggle span:first-child
+{
+  transform-origin: 0% 0%;
+}
+
+#menuToggle span:nth-last-child(2)
+{
+  transform-origin: 0% 100%;
+}
+
+/* Hamburger to X*/
+#menuToggle input:checked ~ span
+{
+  opacity: 1;
+  transform: rotate(45deg) translate(-2px, -1px);
+  background: #222831;
+}
+
+/* Middle Span Hide*/
+#menuToggle input:checked ~ span:nth-last-child(3)
+{
+  opacity: 0;
+  transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+/* Last Span Different Direction */
+#menuToggle input:checked ~ span:nth-last-child(2)
+{
+  transform: rotate(-45deg) translate(0, -1px);
+}
+
+/*Positioning*/
+#menu
+{
+  position: absolute;
+  width: 300px;
+  margin: -100px 0 0 -50px;
+  padding: 50px;
+  padding-top: 125px;
+  
+  background: #EEEEEE;
+  list-style-type: none;
+  -webkit-font-smoothing: antialiased;
+  /* Fix safari flickering text*/
+  
+  transform-origin: 0% 0%;
+  transform: translate(-100%, 0);
+  
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+}
+
+#menu li
+{
+  padding: 10px 0;
+  font-size: 22px;
+}
+
+/*Slide left Animation*/
+#menuToggle input:checked ~ ul
+{
+  transform: none;
+}
+
+/*Responsive Design*/
+
+/*Tablet*/
+@media only screen and (min-width:600px)and (max-width:800px){
+    /*Navigation Bars & Headings*/
+    .navbar{
+        width: 1050px;
+    }
+    .navbar a{
+        padding: 13px 30px;
+        font-size:2rem;
+    }
+
+    .sidebar a{
+        width:80px;
+        height:80px;
+        font-size:3rem;
+    }
+    .heading{
+        width:100vh;
+    }
+    #menu{
+        display:none;
+    }
+    .checkbox{
+        display:none;
+    }
+    /*Home*/
+    .centerhome {
+        width:60%
+    }
+    .hcenter{
+        width:100vh;
+        font-size:1.5rem;
+    }
+
+    /*About me*/
+    .wrapper {
+        display: grid;
+        grid-template-columns: 500px 500px;
+      }
+      .btn{ 
+          position:absolute;
+          right:0px;
+          bottom:20px;
+        }
+     /*Blogs List*/
+      .box{
+          width:450px;
+          height:600px;
+          font-size:2rem;
+        }
+      .rowb{
+          display:grid;
+          grid-template-columns:500px 500px 500px;
+        justify-content:space-between;
+    }
+    .phonesocial{
+        display:none;
+    }
+    /*Contact Me*/
+    .contact{
+        width:100vh;
+    }
+    .input{
+        width: 60%;
+    }
+    #msg{
+        width: 60%;
+    }
+    #send{
+        width:30%;
+    }
+    }
+    /*Phone*/
+@media only screen and (min-width:320px)and (max-width:480px){
+    /*Home*/
+    .hcenter{width:100vh;font-size:2rem;} 
+    /*Navigation Bars*/
+    .sidebar{display:none;} 
+    .navbar{display:none;}
+    /*About me*/
+    .btn{margin-top:20px;}
+    .rowb{width:100vh;font-size:2rem;}
+    .aboutme{margin-top:60px;}
+    /*Blog*/
+    .iblog{
+        width:100vh;
+    }
+    .blog{
+        font-size:2rem;
+        
+    }
+    .blog-img{
+        width:70vh;
+    }
+    /*Contact Me*/
+    .contact{
+        width:100vh;
+    }
+    .input{
+        width: 60%;
+    }
+    #msg{
+        width: 60%;
+    }
+    #send{
+        width:30%;
+    }
+
+}
+/*Desktop-Laptop*/
 @media only screen and (min-width:961px){
-    .centerhome{width: 300px;}
+    /*Home*/
+    .centerhome{
+        width: 300px;
+    }
+    /*About me*/
     .wrapper {
         display: grid;
         grid-template-columns: 500px 500px 500px;
       }
-      .btn{ position: absolute;right: 250px;bottom: 150px;}
+      .btn{ 
+        position:absolute;
+        right: 250px;
+        bottom: 150px;
+    }
+
+/*Blogs List*/
+    .box{
+        width: 220px;
+        height: 400px;
+        flex-direction:column;
+        margin-left:10px;
+    }
+    .rowb{
+        flex-direction:row;
+    }
+    /*Navigaion Bars*/
+    .phonesocial{
+        display:none;
+    }
+    
+    #menu{
+        display:none;
+    }
+    .checkbox{
+        display:none;
+    }
     }
     
 

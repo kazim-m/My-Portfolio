@@ -1,26 +1,44 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <meta charset=utf-8>
-        <meta name="viewport" content="width=device-width,initial-scale=1.0">
-        <link rel="stylesheet" href="style.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+            <meta charset=utf-8>
+            <meta name="viewport" content="width=device-width,initial-scale=1.0">
+            <link rel="stylesheet" href="style.css">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+            <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
         <title>Home</title>
-<!--Top Nav Bar-->
-<nav class="navbar">
-    <a class="Home" href="#home">Home</a>
-    <a class="active" href="#about">About Me</a>
-    <a class= "blogs" href="#blogs">Blogs</a>
-    <a class= "contact" href="#contact">Contact</a>
-</nav>
-       <!--Social Media Side Bar-->
-       <nav class="sidebar">
-        <a href="#"><i class="fa fa-linkedin"></i></a>
-        <a href="#"><i class="fa fa-github"></i></a>
-        <a href="#"><i class="fa fa-facebook"></i></a>
-        </nav>  
+
 </head>
     <body>
+         <!--Phone Hamburger-->
+         <nav role="navigation" class="checkbox">
+            <div id="menuToggle" class="checkbox">
+              <input type="checkbox" />
+              <span></span>
+              <span></span>
+              <span></span>
+              <ul id="menu">
+                <a href="#"><li>Home</li></a>
+                <a href="#"><li>About Me</li></a>
+                <a href="#"><li>Blogs</li></a>
+                <a href="#"><li>Contact</li></a>
+              </ul>
+            </div>
+          </nav>
+          <!---->
+         <!--Top Nav Bar-->
+        <nav class="navbar">
+            <a class="active" href="#home">Home</a>
+            <a class="about" href="#about">About Me</a>
+            <a class= "blogs" href="#blogs">Blogs</a>
+            <a class= "contact" href="#contact">Contact</a>
+        </nav>
+               <!--Social Media Side Bar-->
+               <nav class="sidebar">
+                <a href="#"><i class="fa fa-linkedin"></i></a>
+                <a href="#"><i class="fa fa-github"></i></a>
+                <a href="#"><i class="fa fa-facebook"></i></a>
+                </nav>  
         <div class="hcenter">
     <h1 class="headings">Hello im Mujtaba Kazim</h1>
     <p class="home">I am an aspiring Software Engineer, I am passionate about translating my abstract ideas into the digital world.</p>
