@@ -3,7 +3,7 @@
     <head>
         <meta charset=utf-8>
         <meta name="viewport" content="width=device-width,initial-scale=1.0">
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="style.css" integrity="sha384-OLBgp1GsljhM2TJ+sbHjaiH9txEUvgdDTAzHv2P24donTt6/529l+9Ua0vFImLlb%">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <title>Contact</title>
          <!--Phone Hamburger-->
@@ -14,41 +14,47 @@
               <span></span>
               <span></span>
               <ul id="menu">
-                <a href="#"><li>Home</li></a>
-                <a href="#"><li>About Me</li></a>
-                <a href="#"><li>Blogs</li></a>
-                <a href="#"><li>Contact</li></a>
+                <a href="home.html"><li>Home</li></a>
+                <a href="about.html"><li>About Me</li></a>
+                <a href="blogs.html"><li>Blogs</li></a>
+                <a href="contact.html"><li>Contact</li></a>
               </ul>
             </div>
           </nav>
-          <!--Top Nav Bar-->
+          <!--Desktop/Tablet Top Nav Bar-->
         <nav class="navbar">
-            <a class="Home" href="#home">Home</a>
-            <a class="about" href="#about">About Me</a>
-            <a class= "blogs" href="#blogs">Blogs</a>
-            <a class= "active" href="#contact">Contact</a>
+            <a class="Home" href="home.html">Home</a>
+            <a class="about" href="about.html">About Me</a>
+            <a class= "blogs" href="blogs.html">Blogs</a>
+            <a class= "active" href="contact.html">Contact</a>
         </nav>
     </head>
     <body>
+        <!--Desktop/Tablet Social Media Nav Bar-->
     <nav class="sidebar">
-        <a href="#"><i class="fa fa-linkedin"></i></a>
-        <a href="#"><i class="fa fa-github"></i></a>
-        <a href="#"><i class="fa fa-facebook"></i></a>
+        <a href="https://www.linkedin.com/in/kazim-mujtaba-016a71219/" target="_blank"><i class="fa fa-linkedin"></i></a>
+        <a href="https://github.com/kazim-m" target="_blank"><i class="fa fa-github"></i></a>
+        <a href="https://www.facebook.com/mushtaba.kazim" target="_blank"><i class="fa fa-facebook"></i></a>
         </nav>
+        <!--Content-->
 <section class="contact">
     <h1 class="main-heading">Get in touch</h1>
-    <form action="" class="form">
+    <!--Contact by email form-->
+    <form action="mailto:muj.kazim@gmail.com" method="post" enctype="text/plain" class="form">
     <input type="text" name="name" class="input" placeholder="John Doe">
     <input type="email" name="email" class="input" placeholder="JohnDoe@email.com">
     <textarea name="msg" id="msg" cols="30" rows="15" placeholder="Enter Message Here"></textarea>
+     <!--Contact by email submit button-->
     <input type= "Submit" value="SEND" id="send">
 </form>
 </section>
+<!--Phone Social Media Navigation Bar-->
 <nav class="phonesocial">
-    <a href="#"><i class="fa fa-linkedin"></i></a>
-    <a href="#"><i class="fa fa-github"></i></a>
-    <a href="#"><i class="fa fa-facebook"></i></a> 
+    <a href="https://www.linkedin.com/in/kazim-mujtaba-016a71219/" target="_blank"><i class="fa fa-linkedin"></i></a>
+    <a href="https://github.com/kazim-m" target="_blank"><i class="fa fa-github"></i></a>
+    <a href="https://www.facebook.com/mushtaba.kazim" target="_blank"><i class="fa fa-facebook"></i></a> 
 </nav>
+<!--Footer-->
 <footer>Copyright &copy 2021 Mujtaba Kazim</footer>
     </body>
 </html>
